@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>FCC Pomodoro Clock</title>
+
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+  </head>
+
+  <body>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+<audio id="buzzer" src="http://codingtutorials360.com/14244764.mp3" type="audio/mpeg"></audio>
+
+
+<div class="text-center">
+    <h1>
+
+    Pomodoro Clock</h1>
+    <h2> By</h2>
+        <h1>Sam Gordon</h1>
+  </div>
+
+<div class="text-center">
+
+	<!--ID's are used because each element needs to be shown and hidden separately and accordingly -->
+
+	<div class="circle">
+
+	<div id="timeDiv">
+		<h1 id="title1">Session Time</h1>
+		<a href="#" id="minus5Clock">-</a>
+		<h2 id="timeType"></h2>
+		<h2 id="num">25</h2>
+		<a href="#" id="add5Clock">+</a>
+		<a href="#" class="btn btn-primary"id="reset">Reset</a>
+
+	</div>
+	<div id="breakDiv">
+		<h1 id="title1">Break Time</h1>
+		<a href="#" id="minus5Break">-</a>
+		<h2 id="breakNum">5</h2>
+		<a href="#" id="add5Break">+</a>
+	</div>
+	</div>
+	<a href="#" id="start">Start</a>
+
+</div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+
+
+  </body>
+</html>

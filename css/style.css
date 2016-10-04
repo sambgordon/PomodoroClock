@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:400,800);
+
+
+
+h1, h2, p {
+font-family: 'Open Sans', sans-serif;
+color: white;
+}
+
+body {
+	background-image: url("../images/1.png") !important;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		size: 10%;
+		width: 100%;
+	color: !white;
+	/*font-family*/
+}
+
+h2{
+	display: inline;
+}
+
+#start {
+	margin:10px;
+		color: #fff;
+}
+
+/*
+.circle{
+	 cursor: pointer;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+	padding-top:70px;
+  clear: both;
+  border-radius: 50%;
+  border: 2px #CC444B solid;
+  position: relative;
+  overflow: hidden;
+  text-shadow: none;
+}*/
+
+#title1{
+	font-size: 15px;
+}
+
+#minus5Clock, #add5Clock, #add5Break, #minus5Break{
+	font-size:20px;
+	color: #000;
+}
