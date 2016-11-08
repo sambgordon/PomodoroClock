@@ -1,2 +1,3 @@
 # pomodoroClock-
-Answer to FreeCodeCamp problem.
+Answer to FreeCodeCamp Bonfire.
+A pomodoro clock that features increments for counter length, and a full reset.
