@@ -1,8 +1,7 @@
 $(document).ready(function(){
-	//call buzzer with audio at index 0 to select proper 		audio
-	var buzzer= $("#buzzer")[0];
+	//call buzzer with audio at index 0 to select proper audio
 	//buzzer.play();
-
+	var buzzer= $("#buzzer")[0];
 	//turns string values from num and breakNum into integers
 	var count = parseInt($("#num").html());
 	var breakTime = parseInt($("#breakNum").html());
@@ -28,12 +27,9 @@ $(document).ready(function(){
 			var startBreak= setInterval(breakTimer, 1000);
 			$("#num").hide();
 		}
-
-
 			//converts parsed string into proper time format
 			if(count%60>=10){
-							$("#num").html(Math.floor(count/60)+":"+count%60);
-
+			$("#num").html(Math.floor(count/60)+":"+count%60);
 		}
 			else{
 	$("#num").html(Math.floor(count/60)+":"+"0"+count%60);
@@ -50,19 +46,15 @@ $(document).ready(function(){
 				$("#breakNum, #timeType").hide();
 			}
 
-						if(breakTime%60>=10){
-							$("#breakNum").html(Math.floor(breakTime/60)+":"+breakTime%60);
-
+			if(breakTime%60>=10){
+				$("#breakNum").html(Math.floor(breakTime/60)+":"+breakTime%60);
 		}
 			else{
 		$("#breakNum").html(Math.floor(breakTime/60)+":"+"0"+breakTime%60);
-
 			}
-
 		 }
 		} //function timer end
 	});
-
 	//run reset function on click
 	$("#reset").click(function(){
 		count = 25;
@@ -73,7 +65,6 @@ $(document).ready(function(){
 		$("#start, #minus5Clock, #add5Clock, #minus5Break, #add5Break, #num, #breakNum, #title1, #title2").show();
 		$("#timeType, #reset").hide();
 	});
-
 	//run function on minus5 button click
 	$("#minus5Clock").click(function(){
 		if(count>5){
@@ -82,7 +73,6 @@ $(document).ready(function(){
 		console.log(count);
 		}
 	});
-
 		//run function on add5 button click. the if statement is removed because max time is not as important as min.
 	$("#add5Clock").click(function(){
 
@@ -90,18 +80,14 @@ $(document).ready(function(){
 		$("#num").html(count);
 		console.log(count);
 	});
-
 	$("#minus5Break").click(function(){
 		if(breakTime>5){
 		breakTime -= 5;
 		$("#breakNum").html(breakTime);
 		}
 	});
-
 	$("#add5Break").click(function(){
 		breakTime += 5;
 		$("#breakNum").html(breakTime);
-
 	});
-
 });
