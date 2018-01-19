@@ -7,4 +7,4 @@ Answer to FreeCodeCamp Bonfire.
 A pomodoro clock that features increments for counter length, and a full reset.
 #### (So when the timer resets, the clock state is reset with jQuery.)
 
-[Preview](https://rawgit.com/sambgordon/pomodoro-clock/master/index.html)
+[View](https://rawgit.com/sambgordon/pomodoro-clock/master/index.html)
